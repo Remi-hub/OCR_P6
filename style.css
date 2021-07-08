@@ -1,0 +1,45 @@
+@font-face {
+    font-family: '2-Questa_Regular';
+    src: url('font/2-Questa_Regular-webfont.woff2') format('woff2'),
+         url('font/2-Questa_Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+header
+{
+    font-family: "2-Questa_Regular", serif;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #000;
+
+}
+
+#juststeamit
+{
+    width: 10em;
+    padding-left: 1em;
+}
+
+#accueil
+{
+
+
+}
+
+#categories
+{
+    width: 5em;
+}
+body
+{
+
+}
+h1
+{
+
+}
