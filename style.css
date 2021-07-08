@@ -8,21 +8,24 @@
 }
 
 
+.barre_bouton
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
 header
 {
     font-family: "2-Questa_Regular", serif;
-    background-color: rebeccapurple;
+    background-color: rgb(102,51,153);
     color: white;
     display: flex;
     justify-content: space-between;
-    border: 2px solid #000;
+    border: 3px solid #000;
+    margin-bottom: 15px;
 
-}
 
-#juststeamit
-{
-    width: 10em;
-    padding-left: 1em;
 }
 
 #accueil
@@ -30,16 +33,73 @@ header
 
 
 }
-
-#categories
+#logo
 {
-    width: 5em;
+    width: 125px;
+    height: auto;
+    padding: 5px 0 5px 20px;
 }
-body
+
+.section_meilleur_film
 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(102,51,153, 0.90) ;
+    outline: 2px solid;
+}
+
+
+.button
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 20px 20px 20px;
+
+    display: block;
+}
+
+#description_meilleur_film
+{
+    color: white;
+    padding: 20px;
+    float: right;
 
 }
-h1
+
+h3
 {
+    font-size: 2em;
+    color: white;
+    padding-left: 20px;
+}
+
+.image_meilleur_film
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.breadcrumbs
+{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 
 }
+
+.accueil
+{
+    margin-right: 120px;
+}
+
+.categories
+{
+    margin-right: 120px;
+}
+/* {box-sizing: border-box;} */
