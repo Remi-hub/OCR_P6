@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
-    <script defer src="test.js"></script>
+    <script defer src="script.js"></script>
     <title>JustStreamIt !</title>
 </head>
 
@@ -12,16 +12,16 @@
         <img id="logo" src="logo.png" alt="logo">
             <nav>
                 <ol class="breadcrumbs" >
-                    <li class="accueil">Accueil</li>
-                    <li class="categories">Catégories</li>
+                    <li class="home">Accueil</li>
+                    <li class="categories">Categories</li>
                 </ol>
             </nav>
     </header>
 
     <section class="section_meilleur_film">
         <div class="barre_bouton">
-            <h2></h2>
-            <h3 id="nom_meilleur_film"></h3>
+            <h3>Top rated movie on Imdb :</h3>
+            <h3 id="top_rated_movie_name"></h3>
             <p id="description_meilleur_film"></p>
             <button class= "button" type="button">More Information</button>
         </div>
@@ -32,44 +32,36 @@
     </section>
 
     <section>
-        <h4>Films les mieux notés</h4>
+        <h4 id>Top rated movies</h4>
+        <div id="top_rated_movies"></div>
     </section>
 
     <section>
-        <h5>Catégorie 1</h5>
+        <h5>Top rated in Comedy</h5>
+        <div id="category_comedy"></div>
     </section>
 
     <section>
-        <h5>Catégorie 2</h5>
+        <h5>Top rated in Film Noir</h5>
+        <div id="category_film_noir"></div>
     </section>
 
     <section>
-        <h5>Catégorie 3</h5>
+        <h5>Top rated in Horror</h5>
+        <div id="category_horror"></div>
     </section>
 
+<a href="#demo">Ouvrir la modale</a>
 
+<div id="demo" class="modal">
+  <div class="modal_content">
+    <h1>Hello</h1>
 
-    <div id="best movie"> <!-- Afficher la photo du meilleur film avec la note imdb toutes catégories confondues -->
-                            <!-- ainsi que son titre, un bouton, et résumé du film sous le bouton -->
+    <p>Bienvenue sur la fenêtre modale !</p>
 
-    </div>
-
-    <div id="Top rated movies"> <!-- Afficher les 7 autres films mieux notés avec une fleche pour les parcourir -->
-
-    </div>
-
-    <div id="category_1"> <!-- Afficher les 7  mieux notés de la catégorie avec une fleche pour les parcourir -->
-
-    </div>
-
-    <div id="category_2"> <!-- Afficher les 7  mieux notés de la catégorie avec une fleche pour les parcourir -->
-
-    </div>
-
-    <div id="category_3"> <!-- Afficher les 7  mieux notés de la catégorie avec une fleche pour les parcourir -->
-
-    </div>
-
+    <a href="#" class="modal_close">&times;</a>
+  </div>
+</div>
 
 
 </body>
