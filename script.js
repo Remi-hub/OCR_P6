@@ -34,7 +34,7 @@ async function getMoviesByGenre(page, genre, container, start=0, end=5){
 
     }}
 
-// loading 3 top categories
+// loading 3 top categories and the top rated movies
 async function loadCategories(){
     await getMoviesByGenre(1,"","top_rated_movies", 1,5)
     await getMoviesByGenre(2,"","top_rated_movies", 0,3)
