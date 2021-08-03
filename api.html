@@ -21,56 +21,123 @@
     <section class="best_movie_section">
         <div class="best_movie_information">
             <h3>Top movie on Imdb :</h3>
-            <h3 id="top_rated_movie_name"></h3>
-            <p id="description_meilleur_film"></p>
-            <button class= "button" type="button">More Information</button>
+            <h3 id="best_movie_name"></h3>
+            <p id="best_movie_description"></p>
+            <a id="button_style" href="#button">more information</a>
+            <div id="button" class="modal">
+                <!-- Content of the modal -->
+                <div class="modal_content">
+                    <img id="best_movie_picture_modal" src="" alt="best movie picture">
+                    <h1 id="best_movie_title"></h1>
+                    <p class="modal_text">Genre :</p>
+                    <p id="best_movie_genre"></p>
+                    <p class="modal_text">Release date :</p>
+                    <p id="best_movie_release_date"></p>
+                    <p class="modal_text">Movie Rating :</p>
+                    <p id="best_movie_rating"></p>
+                    <p class="modal_text">Movie Rating on Imdb :</p>
+                    <p id="best_movie_rating_imdb"></p>
+                    <p class="modal_text">Director :</p>
+                    <p id="best_movie_director"></p>
+                    <p class="modal_text">Actors :</p>
+                    <p id="best_movie_actors"></p>
+                    <p class="modal_text">Duration (in minutes) :</p>
+                    <p id="best_movie_duration"></p>
+                    <p class="modal_text">Country :</p>
+                    <p id="best_movie_country"></p>
+                    <p class="modal_text">Box Office result :</p>
+                    <p id="best_movie_box_office_result"></p>
+                    <p class="modal_text">Synopsis :</p>
+                    <p id="best_movie_description_result"></p>
+                    <a href="#" class="modal_close">&times;</a>
+                </div>
+            </div>
         </div>
 
-        <div class="image_meilleur_film">
-            <img id="image_meilleur_film" src="" alt="image du meilleur film">
+        <div class="best_movie_picture">
+            <img id="best_movie_picture" src="" alt="best movie picture">
         </div>
     </section>
 
     <section>
         <div class="div_categories_name">
-            <h4 class="categories_name">Top rated movies</h4>
-            <div id="top_rated_movies"></div>
+            <h5 class="categories_name">Top rated movies</h5>
+            <div class="category_container" id="top_rated_movies">
+                <!-- Next and previous buttons -->
+                <a id="previous_Top_rated_movies" class="previous_button" onclick="handleArrow('top_rated_movies', 'previous')">&#10094;</a>
+                <a id="next_Top_rated_movies" class="next_button" onclick="handleArrow('top_rated_movies', 'next')">&#10095;</a>
+            </div>
+
         </div>
     </section>
 
     <section>
         <div class="div_categories_name">
             <h5 class="categories_name">Top rated in Comedy</h5>
-            <div id="category_comedy"></div>
+            <div class="category_container" id="category_comedy">
+                <!-- Next and previous buttons -->
+                <a id="previous_Comedy" class="previous_button" onclick="handleArrow('category_comedy', 'previous')">&#10094;</a>
+                <a id="next_Comedy" class="next_button" onclick="handleArrow('category_comedy', 'next')">&#10095;</a>
+            </div>
+
         </div>
     </section>
 
     <section>
         <div class="div_categories_name">
             <h5 class="categories_name">Top rated in Film Noir</h5>
-            <div id="category_film_noir"></div>
+            <div class="category_container" id="category_film_noir">
+                <!-- Next and previous buttons -->
+                <a id="previous_film_noir" class="previous_button" onclick="handleArrow('category_film_noir', 'previous')">&#10094;</a>
+                <a id="next_film_noir" class="next_button" onclick="handleArrow('category_film_noir', 'next')">&#10095;</a>
+            </div>
+
         </div>
     </section>
 
     <section>
         <div class="div_categories_name">
             <h5 class="categories_name">Top rated in Horror</h5>
-            <div id="category_horror"></div>
+            <div class="category_container" id="category_horror">
+                <!-- Next and previous buttons -->
+                <a id="previous_horror" class="previous_button" onclick="handleArrow('category_horror', 'previous')">&#10094;</a>
+                <a id="next_horror" class="next_button" onclick="handleArrow('category_horror', 'next')">&#10095;</a>
+            </div>
+
         </div>
     </section>
 
-<a href="#demo">Ouvrir la modale</a>
 
-<div id="demo" class="modal">
-  <div class="modal_content">
-    <h1>Hello</h1>
+<!-- The Modal -->
+<div id="myModal" class="modal_2">
+    <!-- Modal content -->
+    <div class="modal_2-content">
+        <span id="close_modal">&times;</span>
+            <img id="movie_picture_modal" src="" alt="movie picture">
+            <h1 id="movie_title"></h1>
+            <p class="modal_text">Genre :</p>
+            <p class="modal_subtext" id="movie_genre"></p>
+            <p class="modal_text">Release date :</p>
+            <p class="modal_subtext" id="movie_release_date"></p>
+            <p class="modal_text">Movie Rating :</p>
+            <p class="modal_subtext" id="movie_rating"></p>
+            <p class="modal_text">Movie Rating on Imdb :</p>
+            <p class="modal_subtext" id="movie_rating_imdb"></p>
+            <p class="modal_text">Director :</p>
+            <p class="modal_subtext" id="movie_director"></p>
+            <p class="modal_text">Actors :</p>
+            <p class="modal_subtext" id="movie_actors"></p>
+            <p class="modal_text">Duration (in minutes) :</p>
+            <p class="modal_subtext" id="movie_duration"></p>
+            <p class="modal_text">Country :</p>
+            <p class="modal_subtext" id="movie_country"></p>
+            <p class="modal_text">Box Office result :</p>
+            <p class="modal_subtext" id="movie_box_office_result"></p>
+            <p class="modal_text">Synopsis :</p>
+            <p class="modal_subtext" id="movie_description_result"></p>
+    </div>
 
-    <p>Bienvenue sur la fenêtre modale !</p>
-
-    <a href="#" class="modal_close">&times;</a>
-  </div>
 </div>
-
 
 </body>
 </html>
