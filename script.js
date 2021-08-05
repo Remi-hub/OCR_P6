@@ -114,6 +114,9 @@ topRatedMovie()
 loadCategories()
 
 
+
+// handling arrow of the carrousel
+
 let vignettes = {
     top_rated_movies: 0,
     category_comedy: 0,
